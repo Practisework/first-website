@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* #013440  dark blue*/
+/* #049DBF light blue */
+/* #F27405 light orange */
+/* #F24405 dark orange */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13vh;
+    /* align-content:space-around; */
+}
+#nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navlink{
+    text-decoration: none;
+    color: #013440;
+    position: relative;
+}
+#Logotxt{
+    font-weight:normal;
+    color: #013440;
+}
+#navlink::after{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: #013440;
+    transition: 150ms ease-out;
+}
+#navlink:hover::after{
+    width: 100%;
+}
+/* --------------------------------------------------------------- */
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87vh;
+
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    position: relative;+
+}
+#shoe{
+    height: 85.5vh;
+    width: 29vw;
+}
+#heading{
+    display: flex;
+    position: relative;
+}
+#p1{
+    font-size: 86px;
+    color: #F24405;
+    font-family: "Roboto", sans-serif;
+}
+#p2{
+    font-size: 86px;
+    color: #F27405;
+    font-family: "Roboto", sans-serif;
+}
+#p3{
+    font-size: 86px;
+    color: #049DBF;
+    font-family: "Roboto", sans-serif;
+}
+#info{
+    text-align: justify;
+    color: #013440;
+}
+#button{
+    font-size: 37px;
+    padding-left: 15px;
+    padding-right : 15px;
+    border: #013440 5px solid;
+    background-color: #F27405;
+    color: #013440;
+    transition: 200ms;
+    box-shadow: 6px 6px 0px 1px #013440;
+}
+#button:hover{
+    box-shadow: 0px 0px 0px 0px #013440;
+}
